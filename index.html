@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet" />
+</head>
+<body id="intro">
+     <!-- Navbar -->
+     <div class="navbar d-flex flex-column">
+        <a href="#intro"><p class="nav-item" [class.active]="activeItem === '<Home>'" (click)="setActive('<Home>')">Home</p></a>
+        <a href="#about"><p class="nav-item" [class.active]="activeItem === '<About>'" (click)="setActive('<About>')">About</p></a>
+        <a href="#skills"><p class="nav-item" [class.active]="activeItem === '<Skills>'" (click)="setActive('<Skills>')">Skills</p></a>
+        <a href="#project"><p class="nav-item" [class.active]="activeItem === '<Project>'" (click)="setActive('<Project>')">Project</p></a>
+        <a href="#contact"><p class="nav-item" [class.active]="activeItem === '<Contact>'" (click)="setActive('<Contact>')">Contact</p></a>
+    </div>
+    <div class="main">
+
+        <!-- Intro Part which is right beside Navbar -->
+        <div class="intro d-flex justify-content-center align-items-center" >
+            <div class="details">
+                <h2 class="name">Anushka Maheshwari</h2>
+                <p class="desig">Full-stack Developer</p>
+                <p class="introduction">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, aut beatae! Distinctio quo corrupti sunt quis laudantium beatae eveniet eaque aliquam dolor magni aliquid sapiente, ut illo dolore, quod alias?</p>
+            </div>
+            <div class="image">
+                <img src="../assets/project1.jpg" alt="introImage">
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <div id="about" class="aboutMe d-flex justify-content-center align-items-center flex-column">
+            <p class="head">About Me</p>
+            <p class="line"></p>
+            <div class="aboutMeData d-flex">
+                <div class="aboutMeboxes d-flex flex-column">
+                    <div class="box">
+                        <img src="../assets/Experience.svg" alt="Experience">
+                        <h3>2</h3>
+                        <p style="text-align: right;"> Years Experience</p>
+                    </div>
+                    <div class="box">
+                        <img src="../assets/project-diagram.svg" alt="Experience">
+                        <h3>2</h3>
+                        <p style="text-align: right;"> Successful
+                            Projects</p>
+                    </div>
+                    <div class="box">
+                        <img src="../assets/medal.svg" alt="Experience">
+                        <h3>1</h3>
+                        <p style="text-align: right;"> Awards Won</p>
+                    </div>
+                </div>
+                <p class="aboutMeText">Ever since I can remember, I have always been thinking up new ideas and finding creative ways to bring them to life. As a person who has been pursuing their passions from a young age, I can proudly say that hard work truly counts. I like to think of my career as one big learning experience that continuously grows with each project and collaboration. With a dedication to functionality and a curiosity for what’s ahead of the curve, I keep my work practical, relevant and innovative. Have a look at my past projects, and feel free to reach out with any questions. Ever since I can remember, I have always been thinking up new ideas and finding creative ways to bring them to life. As a person who has been pursuing their passions from a young age, I can proudly say that hard work truly counts. I like to think of my career as one big learning experience that continuously grows with each project and collaboration.</p>
+            </div>
+        </div>
+
+
+        <!-- Skills Section -->
+        <div id="skills" class="skills d-flex flex-column justify-content-center align-items-center">
+            <p class="head">Skills</p>
+            <p class="line"></p>
+
+            <div class="progress-bars col-8 d-flex flex-column">
+                <div class="progress rounded-0 d-flex justify-content-between">
+                    <div class="progress-bar" role="progressbar" style="width: 5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">CSS</div>
+                    <p class="score">00</p>
+                  </div>
+                <div class="progress rounded-0 d-flex justify-content-between">
+                    <div class="progress-bar" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                    <p class="score">89</p>
+                  </div>
+                <div class="progress rounded-0 d-flex justify-content-between">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">React</div>
+                    <p class="score">95</p>
+                  </div>
+                <div class="progress rounded-0 d-flex justify-content-between">
+                    <div class="progress-bar" role="progressbar" style="width: 97%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Angular</div>
+                    <p class="score">97</p>
+                  </div>
+                <div class="progress rounded-0 d-flex justify-content-between">
+                    <div class="progress-bar" role="progressbar" style="width: 91%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+                    <p class="score">91</p>
+                  </div>
+                <div class="progress rounded-0 d-flex justify-content-between">
+                    <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Python</div>
+                    <p class="score">70</p>
+                  </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div id="project" class="projects d-flex flex-column justify-content-center align-items-center">
+            <p class="head">Projects</p>
+            <p class="line"></p>
+
+            <div class="row">
+                <!-- First Project Card -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">Description of Project 1 goes here.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Second Project Card -->
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">Description of Project 2 goes here. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Contact Me Form -->
+        <div id="contact" class="contactForm d-flex flex-column justify-content-center align-items-center">
+            <p class="head">Contact Me</p>
+            <p class="line"></p>
+
+            <div class="form d-flex justify-content-between  col-8">
+                <div class="details">
+                    <p class="name">Anushka Maheshwari</p>
+                    <p class="desig">Full-stack Developer</p>
+                    <p class="email">Email: <b> anushkamaheshwari@gmail.com</b></p>
+                    <p class="phone">Phone: <b>+91 8630444357</b></p>
+                    <div class="mediaLinks d-flex">
+                        <a href=""><img src="../assets/git.svg" alt=""></a>
+                        <a href=""><img src="../assets/linkedIn.svg" alt=""></a>
+                        <a href=""><img src="../assets/twitter.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="formed d-flex flex-column">
+                    <input type="text" placeholder="Full Name">
+                    <input type="text" placeholder="Email Address">
+                    <input type="text" placeholder="Subject">
+                    <textarea type="text" placeholder="Enter your message"></textarea>
+
+                    <button>Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+  
+</body>
+
+
+</html>

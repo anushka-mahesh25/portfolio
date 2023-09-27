@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212 !important;
+    padding: 25px;
+}
+
+.main {
+    border: 1px solid #FFF;
+    min-height: 150vh;
+    padding-bottom: 5rem;
+}
+
+.navbar {
+    color: white !important;
+    float: left !important;
+    margin-top: 0.8rem !important;
+    margin-left: -20px !important;
+    gap: 1rem !important;
+    position: fixed !important;
+}
+
+.navbar .nav-item {
+    font-family: 'Fira Code', monospace !important;
+    transform: rotate(-90deg) !important;
+    border: 1px solid #FFF !important;
+    width: 140px !important;
+    height: 100px !important;
+    padding: 30px 41px !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+    background-color: black !important;
+}
+
+.navbar .nav-item:hover {
+    background-color: white !important;
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+.navbar .nav-item.active {
+    background-color: white !important;
+    color: black !important;
+    font-weight: 600 !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: #FFF !important;
+}
+
+.intro {
+    font-weight: 400;
+    margin-top: -9rem;
+    gap: 10rem;
+    height: 100vh;
+}
+.intro .details{
+    margin-top: 6rem;
+}
+
+.intro .details .name {
+    font-family: 'Poppins', sans-serif;
+    color: #FFB800;
+    font-size: 52px;
+}
+
+.intro .details .desig {
+    font-family: 'Fira Code', monospace;
+    font-size: 32px;
+    color: white;
+}
+.intro .details .introduction{
+    font-size: 17px;
+    line-height: 160%;
+    width: 42vw;
+    color: white;
+    font-family: 'Fira Code', monospace;
+}
+
+.intro .image img {
+    border-radius: 195px 195px 0px 0px;
+}
+
+.aboutMe {
+    margin-top: 15rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+.aboutMe .head {
+    font-size: 45px;
+    font-weight: 300;
+    padding: 12px 24px;
+}
+
+.aboutMe .line {
+    width: 129px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+}
+
+.aboutMe .aboutMeData {
+    margin-top: 5rem;
+}
+
+.aboutMe .aboutMeData .aboutMeboxes {
+    padding-right: 48px;
+    row-gap: 70px;
+}
+
+.aboutMe .aboutMeData .aboutMeboxes .box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    row-gap: 8px;
+    width: 70px;
+}
+
+.aboutMe .aboutMeData .aboutMeboxes .box p {
+    font-size: 14px;
+}
+
+.aboutMe .aboutMeData .aboutMeText {
+    font-weight: 400;
+    line-height: 40px;
+    color: white;
+    max-width: 700px;
+    border-left: 1px solid white;
+    padding-left: 48px;
+}
+
+.skills {
+    margin-top: 4rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+.skills .head {
+    font-size: 45px;
+    font-weight: 300;
+    padding: 12px 24px;
+}
+
+.skills .line {
+    width: 129px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+}
+
+.skills .progress-bars {
+    margin-top: 5rem;
+    row-gap: 30px;
+}
+
+.skills .progress-bars .progress {
+    height: 35px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.skills .progress-bars .progress .score {
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    padding-right: 15px;
+}
+
+.skills .progress-bars .progress .progress-bar {
+    font-family: 'Fira Code', monospace;
+    background-color: white !important;
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.projects {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10rem;
+}
+
+.projects .head {
+    font-size: 45px;
+    font-weight: 300;
+    padding: 12px 24px;
+}
+
+.projects .line {
+    width: 129px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+}
+
+.contactForm {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10rem;
+}
+
+.contactForm .head {
+    font-size: 45px;
+    font-weight: 300;
+    padding: 12px 24px;
+}
+
+.contactForm .line {
+    width: 129px;
+    height: 1px;
+    border-bottom: 1px solid #fff;
+}
+
+.contactForm .form {
+    margin-top: 5rem;
+}
+
+.contactForm .form .name {
+    color: #FFB800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.contactForm .form .desig,
+.contactForm .form .email,
+.contactForm .form .phone {
+    font-family: 'Fira Code', monospace;
+}
+
+.contactForm .form .email {
+    margin-top: 10px;
+}
+
+.contactForm .form .mediaLinks {
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.contactForm .form .formed {
+    row-gap: 20px;
+}
+
+.contactForm .form input {
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #FFF;
+    width: 30vw;
+    padding: 5px 15px;
+    color: white;
+}
+
+.contactForm .form textarea {
+    background-color: transparent;
+    border-radius: 0;
+    border: 1px solid #FFF;
+    padding: 5px 15px;
+    height: 200px;
+}
+
+.contactForm .form ::placeholder {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.contactForm .form button {
+    background-color: transparent;
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    width: max-content;
+    transition: 0.2s;
+    padding: 10px 20px;
+}
+
+.contactForm .form button:hover {
+    background-color: white;
+    color: black;
+}
+
+.projects .card {
+    border: 8px solid white; 
+    width: 30vw; 
+    height: 30vw; 
+    margin-bottom: 20px; 
+    background-color: transparent; 
+    box-shadow: none; 
+}
+
+.projects .card img {
+    border-radius: 0; 
+    max-width: 100%; 
+}
+
+.projects .card .card-body {
+    padding: 20px; 
+}
+
+.projects .card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.projects .card .card-text {
+    font-size: 16px;
+    color: white;
+}
